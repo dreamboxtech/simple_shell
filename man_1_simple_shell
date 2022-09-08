@@ -1,11 +1,9 @@
-.TH HSH 1 "09 November 2018" "1" "Simple Shell man page"
+.TH HSH 1 "07 September 2022" "1" "Simple Shell man page"
 .SH NAME
 .B hsh
 - A simple UNIX command interpreter.
 .SH SYNOPSIS
 .B ./hsh
-.SH DESCRIPTION
-This program is a simple shell that has been made by the Holberton guidelines. It contains basic features and functions found in other shell programs.
 .SS Overview
 This shell is an executable that reads lines from the prompt, interprets them, and generally executes other commands. It runs by compiling all .c files in the repository to create an executable
 .SS Path Search
@@ -34,4 +32,4 @@ $ echo "ls -l" | ./hsh
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Derrick Gee, Andrew Lindburg, Russell Molimock
+Abiola Olaleye, Chinedum Oliver-Ugwi
