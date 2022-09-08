@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .TH SHELLBY 1 "August 2022" "ALX School" "0x16. C - Simple Shell"
 .SH NAME
 .B shellby\fR \- simple UNIX command interpreter
@@ -178,3 +179,40 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 
 .B Shellby\fR emulates basic functionality of the \fBsh\fR shell.
 This man page borrows from the corresponding man pages sh(1) and dash(1).
+=======
+.TH HSH 1 "07 September 2022" "1" "Simple Shell man page"
+.SH NAME
+.B hsh
+- A simple UNIX command interpreter.
+.SH SYNOPSIS
+.B ./hsh
+.SS Overview
+This shell is an executable that reads lines from the prompt, interprets them, and generally executes other commands. It runs by compiling all .c files in the repository to create an executable
+.SS Path Search
+When locating a command, this shell first looks to see if it has an executable by that name in the PATH of env. Then it looks for builtin commands by that name.
+
+.SH MODES
+.B hsh
+Interactive mode
+.SS
+EXAMPLE:
+$ ls -l
+.B ./hsh
+Non-interactive mode
+.SS
+EXAMPLE:
+$ echo "ls -l" | ./hsh
+
+.SH BUILT-IN COMMANDS
+.B env
+- prints environment
+.B exit
+- exits the shell
+
+.SH SEE ALSO
+.I sh(1), Betty(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Abiola Olaleye, Chinedum Oliver-Ugwi
+>>>>>>> a3af166d19de70e404a9f273e5c1f8577b6c000b
